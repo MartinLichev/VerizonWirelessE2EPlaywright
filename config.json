@@ -1,0 +1,42 @@
+{
+  "baseUrl": "https://www.glami.bg/",
+  "timeout": 30000,
+  "browserType": "chromium",
+  "relativePaths": {
+    "home": "/home",
+    "womenClothing":{
+      "allClothing": "/damski-drehi-obuvki",
+      "onlyDresses": "/damski-drehi",
+      "onlyShoes": "/damski-obuvki",
+      "onlySports": "/damski-sportni-drehi-i-obuvki",
+      "onlyAccessories": "/damski-aksesoari",
+      "onlyJewelry": "/damski-bizuta-i-casovnici",
+      "onlyBrands": "/marki",
+      "onlyDiscounts": "/damski-drehi-obuvki/otstupki",
+      "onlyFirstClassBrands": "/marki",
+      "onlyBlog": "/blog"
+    },
+    "mensClothing":{
+      "allClothing": "/mzki-drehi-i-obuvki",
+      "onlyDresses": "/mzki-drehi",
+      "onlyShoes": "/mzki-obuvki",
+      "onlySports": "/mzki-sportni-drehi-i-obuvki",
+      "onlyAccessories": "/mzki-aksesoari",
+      "onlyJewelry": "/mzki-bizuta-i-casovnici",
+      "onlyBrands": "/marki",
+      "onlyDiscounts": "/mzki-drehi-i-obuvki/otstupki",
+      "onlyFirstClassBrands": "/mzki-drehi-i-obuvki/prvoklasni",
+      "onlyBlog": "/blog"
+    },
+    "childrensClothing":{
+      "allClothing": "/detski-drehi-i-obuvki",
+      "onlyDresses": "/detski-drehi",
+      "onlyShoes": "/detski-obuvki",
+      "onlyAccessories": "/detski-aksesoari",
+      "onlyBrands": "/marki",
+      "onlyDiscounts": "/detski-drehi-i-obuvki/otstupki",
+      "onlyFirstClassBrands": "/detski-drehi-i-obuvki/prvoklasni",
+      "onlyBlog": "/blog"
+    }
+  }
+}

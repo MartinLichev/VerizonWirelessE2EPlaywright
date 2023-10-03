@@ -3,11 +3,14 @@ const {
     firefox,
     webkit
 } = require('playwright');
+const config = require('../config.json');
 
 class JestPlaywrightHelper {
     constructor() {
-        // Default to 'chromium' if no CLI argument is provided
-        this.browserType = process.argv[2] || 'chromium';
+        // Use the browserType from config.json or fallback to 'chromium' if no CLI argument is provided
+        this.browserType = config.browserType || process.argv[2] || 'chromium';
+        this.timeout = config.timeout;
+        this.baseUrl = config.baseUrl;
     }
 
     async createBrowser() {
@@ -24,8 +27,9 @@ class JestPlaywrightHelper {
         this.page = await this.context.newPage();
     }
 
-    async goto(url) {
-        await this.page.goto(url);
+    async goto(relativePath = '') {
+        // Use baseUrl and timeout from config.json
+        await this.page.goto(`${this.baseUrl}${relativePath}`, { timeout: this.timeout });
     }
 
     async click(selector) {
