@@ -1,0 +1,20 @@
+{
+    "commands": [
+        {
+            "name": "test",
+            "command": "jest"
+        },
+        {
+            "name": "test:parallel",
+            "command": "jest --runInBand"
+        },
+        {
+            "name": "test:suite1",
+            "command": "jest tests/suite1/"
+        },
+        {
+            "name": "test:suite2",
+            "command": "jest tests/suite2/"
+        }
+    ]
+}
